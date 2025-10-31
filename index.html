@@ -5,68 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Titik at Tunog: Tagalog Phonics</title>
     
+    <!-- Import Google Fonts (Poppins and Open Sans Condensed) -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    
     <style>
-        /* Basic styling for the entire page */
+        /* --- DESIGN SYSTEM: MAIN MENU SCREEN (Applied to Landing Page) --- */
+        
+        /* Color: Soft Beige (0xFFF8F5F2) | Typography: Poppins Bold */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif; /* Set Poppins as main font */
             margin: 0;
-            padding: 20px;
-            text-align: center; /* Center all inline content like text and the icon/emoji */
-            background-color: #f4f4f9; /* Light background */
-            color: #333; /* Dark text */
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #F8F5F2; /* Soft Beige */
+            color: #3E2723; /* Dark Brown Text */
         }
 
-        /* Styling for the central icon */
-        .icon {
-            font-size: 80px; /* Make the icon/emoji very large */
-            margin: 30px 0;
-            display: block; /* Ensures the emoji/icon takes up its own line */
+        /* Styling for the central icon image */
+        .icon-img {
+            width: 150px; /* Set a fixed width for your image */
+            height: auto; /* Maintain aspect ratio */
+            margin: 40px auto; /* Center the image and add vertical spacing */
+            display: block; 
+            /* Note: To achieve the 'elevation 6' effect, we use a shadow */
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 16px; /* Apply main menu button radius to icon */
         }
 
-        /* Styling for the main heading */
+        /* Typography: Main Headings (Poppins Bold 32pt) */
         h1 {
-            color: #007bff; /* A nice blue color for the main title */
-            margin-bottom: 10px;
+            font-size: 32pt;
+            font-weight: 700; /* Bold */
+            color: #3E2723; /* Dark Brown */
+            margin-bottom: 20px;
         }
 
-        /* Styling for the subheading/tagline */
+        /* Tagline/Subtext */
         p {
             font-size: 1.2em;
-            margin-bottom: 40px;
+            margin-bottom: 50px;
         }
 
-        /* Styling for the call-to-action button */
+        /* Typography: Menu Buttons (Poppins Bold 24pt) | Color: Warm Orange (0xFFE6A14A) */
         .cta-button {
             display: inline-block;
-            padding: 15px 30px;
-            background-color: #28a745; /* Green for a call-to-action */
+            /* Button Styles: Rounded corners (16pt), large padding, elevation 6 */
+            padding: 20px 40px;
+            background-color: #E6A14A; /* Warm Orange Primary Button */
             color: white;
             text-decoration: none;
-            border-radius: 8px;
-            font-size: 1.1em;
-            font-weight: bold;
-            transition: background-color 0.3s;
+            border-radius: 16px; /* Rounded corners (16pt) */
+            font-size: 24pt; /* 24pt from Typography */
+            font-weight: 700; /* Bold */
+            font-family: 'Poppins', sans-serif;
+            transition: background-color 0.3s, box-shadow 0.3s;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Elevation 6 */
         }
 
         .cta-button:hover {
-            background-color: #218838; /* Darker green on hover */
+            background-color: #d19242; /* Slightly darker orange on hover */
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
         }
+
+        /* Typography: Subscription Button (OpenSans_Condensed-Regular Bold 16pt) */
+        .sub-text {
+            margin-top: 60px;
+            font-size: 16pt;
+            font-weight: 700; /* Bold */
+            font-family: 'Open Sans Condensed', sans-serif;
+            color: #616161; /* Subdued Text approximation */
+        }
+        
+        /* --- Placeholder for other main menu buttons (for reference) --- */
+        .btn-green { background-color: #6FCF97; } /* Green Button */
+        .btn-yellow { background-color: #FFD36B; } /* Yellow Button */
+        .btn-blue { background-color: #6EC1E4; } /* Blue Button */
+        .btn-pink { background-color: #FF8C94; } /* Pink Button */
+
+        /* --- DESIGN SYSTEM: LEARNING SCREEN (Not directly used here, but for reference) --- */
+        /* .learning-page { background-color: #E3F2FD; } Light Blue [50] */
+        /* .subdued-text { color: #616161; } Grey [700] */
+        /* .highlighted-text { color: #FF7043; } Orange Accent [700] approximation */
+        /* .next-to-pronounce { color: #FF7043; } Deep Orange [400] approximation */
+        /* .learning-content { font-size: 80pt; font-weight: 700; } */
+        /* .learning-button { border-radius: 12px; } */
+
     </style>
 </head>
 <body>
 
-    <!-- Icon/Logo Placeholder -->
-    <!-- You can replace the 📚 emoji with a link to your app's logo image -->
-    <span class="icon" aria-label="Book Icon">📚</span>
-    <!-- Example if you have an image: <img src="logo.png" alt="App Logo" class="icon-img"> -->
+    <!-- Assuming your icon is named 'app-icon.png' and uploaded to the root -->
+    <img src="app-icon.png" alt="Titik at Tunog App Icon" class="icon-img">
 
     <h1>Titik at Tunog</h1>
     <p>Ang iyong gabay sa mabilis at tamang pagbasa ng Tagalog.</p>
     
-    <!-- Call-to-Action -->
+    <!-- Call-to-Action (Primary Button Style) -->
     <a href="#" class="cta-button">Simulan ang Pag-aaral Ngayon!</a>
     
-    <p style="margin-top: 50px; font-size: 0.9em; color: #666;">
+    <!-- Subscription Text (Open Sans Condensed Style) -->
+    <p class="sub-text">
         <small>Tagalog Phonics App</small>
     </p>
 
